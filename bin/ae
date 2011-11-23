@@ -3,4 +3,6 @@
 $:.unshift(File.join(File.dirname(File.dirname(__FILE__)),'lib'))
 require 'asana'
 
-Asana.run(ARGV)
+asana = Asana.new(STDOUT, ARGV)
+asana.deliver!
+puts "hello world"
