@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
-$:.unshift(File.join(File.dirname(File.dirname(__FILE__)),'lib'))
+$:.unshift(File.join(File.dirname(File.dirname(__FILE__)), 'lib'))
 require 'asana'
 
 asana = Asana.new(STDOUT, ARGV)
 asana.deliver!
-puts "hello world"
